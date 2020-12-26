@@ -12,7 +12,7 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 public class DataRestConfig implements RepositoryRestConfigurer {
     @Override
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config, CorsRegistry corsRegistry) {
-        setExposure(config, Person.class, HttpMethod.DELETE, HttpMethod.POST, HttpMethod.PUT);
+        setExposure(config, Person.class, HttpMethod.DELETE, HttpMethod.POST, HttpMethod.PUT, HttpMethod.PATCH);
         setExposure(config, Animal.class, HttpMethod.GET);
     }
 
