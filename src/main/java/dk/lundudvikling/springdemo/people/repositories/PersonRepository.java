@@ -10,8 +10,4 @@ import java.util.List;
 
 @RepositoryRestResource(path = "people")
 public interface PersonRepository extends JpaRepository<Person, Long> {
-
-    @Override
-    @RestResource()
-    List<Person> findAll();
 }
